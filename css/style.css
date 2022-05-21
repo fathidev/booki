@@ -1,0 +1,68 @@
+/* IMPORT OF PROJECT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+/* COLORS SPECIFICATIONS */
+:root {
+    --blue:#0065FC;
+    --blue-light:#DEEBFF;
+    --grey-light:#F2F2F2;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", "sans-serif";
+    text-decoration: none;
+}
+
+/* remove internal and external margins all over the body */
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+header,
+main,
+.sections-footer {
+    padding: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+/* HEADER */
+
+    /* FILTERS */
+    .search-filters .fas{
+        color: var(--blue);
+    }
+
+    /* INFO RESULT OF SEARCH */
+    .search-info-result .fas {
+        color:var(--blue)
+    }
+/*  HEADER END */
+
+/* MAIN */
+
+    /* SECTION LODGINGS LIST*/
+       /* COLORS STARS FOR GRADE OF CITY & POPULAR */
+        .star-blue {
+            color: var(--blue);
+        }
+        .star-blue-light {
+            color: var(--blue-light);
+        }
+
+/* MAIN END */
+
+
+
+/* FOOTER */
+footer {
+    background-color: var(--grey-light);
+}
+
+
+
+/* FOOTER END */
