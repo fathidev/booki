@@ -9,11 +9,12 @@
     --grey-light:#F2F2F2;
 }
 
+/* WILDCARD SELECTOR */
 * {
     /* application boox-sizing on all éléments */
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 /* remove internal and external margins all over the body */
@@ -30,10 +31,33 @@ main,
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 /* HEADER */
 
+    /* NAV */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    #nav-logo {
+        margin-right: auto;
+    }
+    #nav-menu {
+        display: flex;
+    }
+    #nav-menu li {
+        list-style: none;
+    }
+    .nav-link {
+        padding: 20px;
+    }
+
+    
+   
     /* FILTERS */
     .search-filters .fas{
         color: var(--blue);
@@ -59,12 +83,9 @@ a {
 /* MAIN END */
 
 
-
 /* FOOTER */
 footer {
     background-color: var(--grey-light);
 }
-
-
 
 /* FOOTER END */
