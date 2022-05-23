@@ -77,7 +77,7 @@ a {
 
     /* SECTION SEARCH */
         /* SEARCH-INTRO */
-            /* SEARCH-INTRO-TITLE */
+            /* SEARCH-INTRO-TITLE & SUB-TITLE*/
             #search-intro-title {
                 margin:0 ;
                 font-size:large;
@@ -122,5 +122,9 @@ footer {
     .nav-menu a:hover {
         border-bottom-color:var(--blue);
         border-top-color: transparent;
+    }
+
+    #nav-logo {
+        margin: auto;
     }
 }
