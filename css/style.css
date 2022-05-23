@@ -42,20 +42,31 @@ a {
         align-items: center;
         justify-content: flex-end;
         flex-wrap: wrap;
+        border: 1px solid green;
     }
     #nav-logo {
         margin-right: auto;
+        width:120px;
+        padding :15px;
         
     }
     #nav-menu {
         display: flex;
+        border: 1px solid green;
+        padding-left: 0px;
     }
     #nav-menu li {
         list-style: none;
+       
     }
+
     .nav-link {
         padding: 20px;
-  
+    }
+ 
+    #nav-menu a:hover{
+        color: var(--blue);
+        border-top: 3px solid var(--blue);
     }
    
     /* FILTERS */
