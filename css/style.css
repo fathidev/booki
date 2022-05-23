@@ -48,6 +48,7 @@ a {
     .nav-menu a {
         padding:20px;
         border-top: 3px solid transparent;
+        font-size: medium;
     }
     .nav-menu a:hover{
         border-top-color: var(--blue);
@@ -73,6 +74,19 @@ a {
 /*  HEADER END */
 
 /* MAIN */
+
+    /* SECTION SEARCH */
+        /* SEARCH-INTRO */
+            /* SEARCH-INTRO-TITLE */
+            #search-intro-title {
+                margin:0 ;
+                font-size:large;
+            }
+            #search-intro-sub-title {
+                font-size:small;
+                margin: 5px 0 17px 0;
+            }
+
 
     /* SECTION LODGINGS LIST*/
        /* COLORS STARS FOR GRADE OF CITY & POPULAR */
