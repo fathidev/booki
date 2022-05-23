@@ -22,8 +22,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
-
-header,
+.search,
 main,
 .sections-footer {
     padding: 20px;
@@ -60,7 +59,7 @@ a {
        
     }
 
-    .nav-link {
+    #nav-menu a {
         padding: 20px;
     }
  
@@ -100,3 +99,16 @@ footer {
 }
 
 /* FOOTER END */
+
+/* MEDIA SMARTPHONE */
+
+@media (max-width: 768px) {
+
+    #nav-menu {
+        border: 3px solid red;
+        flex-basis: 100%;
+    }
+    #nav-logo {
+        text-align: center;
+    }
+}
