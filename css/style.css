@@ -22,10 +22,14 @@ body {
     padding: 0px;
     margin: 0px;
 }
-.search,
+/* .search,
 main,
 .sections-footer {
     padding: 20px;
+} */
+
+.wrapper {
+    padding: 20px
 }
 
 a {
@@ -61,16 +65,6 @@ a {
     }
     
     
-
-    /* FILTERS */
-    .search-filters .fas{
-        color: var(--blue);
-    }
-
-    /* INFO RESULT OF SEARCH */
-    .search-info-result .fas {
-        color:var(--blue)
-    }
 /*  HEADER END */
 
 /* MAIN */
@@ -85,6 +79,18 @@ a {
             #search-intro-sub-title {
                 font-size:small;
                 margin: 5px 0 17px 0;
+            }
+
+                
+            /* SEARCH - FILTERS */
+                /*  SEARCH - FILTERS - LIST -ITEMS */
+                    .search-filters .fas{
+                        color: var(--blue);
+                    }
+
+            /* SEARCH INFO RESULTS */
+            .search-info-result .fas {
+                color:var(--blue)
             }
 
 
