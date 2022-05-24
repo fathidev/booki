@@ -22,14 +22,10 @@ body {
     padding: 0px;
     margin: 0px;
 }
-/* .search,
-main,
-.sections-footer {
-    padding: 20px;
-} */
 
+/*  add padding for search + main + sections-footer */
 .wrapper {
-    padding: 20px
+    padding: 25px
 }
 
 a {
@@ -45,6 +41,7 @@ a {
         align-items: center;
         justify-content: flex-end;
         flex-wrap: wrap;
+        margin-bottom: -27px;
     }
     .nav-menu {
         display: flex;
@@ -73,12 +70,47 @@ a {
         /* SEARCH-INTRO */
             /* SEARCH-INTRO-TITLE & SUB-TITLE*/
             #search-intro-title {
-                margin:0 ;
+                margin-bottom: 10px ;
                 font-size:large;
             }
             #search-intro-sub-title {
                 font-size:small;
-                margin: 5px 0 17px 0;
+                margin-bottom: 15px;
+
+            }
+            /* SEARCH FORM */
+            .search-form {
+                display: flex;
+            }
+          
+            .search-form i {
+                padding: 16px 16px;
+                background-color: var(--grey-light);
+                border-radius: 16px 0 0 16px;
+            }
+
+            .search-form input {
+                flex-basis: 45px;
+                padding-left: 10px;
+                border: 1px solid var(--grey-light);   
+            }
+
+            .search-form input::placeholder {
+                font-size: 14px;
+                color: black;
+                font-weight: bold;
+
+            }
+
+            .search-form button {
+                background-color: var(--blue);
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                border-radius: 0 16px 16px 0;
+                padding: 0 20px;
+                border: none;
+                cursor: pointer;
             }
 
                 
