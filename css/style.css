@@ -57,8 +57,8 @@ a {
     }
     #nav-logo {
         margin-right: auto;
-        padding :16px; 
-        width: 110px;
+        padding :18px; 
+        width: 130px;
     }
     
     
@@ -70,20 +70,21 @@ a {
         /* SEARCH-INTRO */
             /* SEARCH-INTRO-TITLE & SUB-TITLE*/
             #search-intro-title {
-                margin-bottom: 10px ;
-                font-size:large;
+                margin-bottom: -7px ;
+                font-size:20px;
             }
             #search-intro-sub-title {
-                font-size:small;
+                font-size:16px;
                 margin-bottom: 15px;
 
             }
             /* SEARCH FORM */
             .search-form {
                 display: flex;
+                margin-bottom: 29px;
             }
             /* ICON GEOLOC */
-            .fas.fa-map-marker-alt{
+            #icon-geoloc{
                 padding: 16px 16px;
                 background-color: var(--grey-light);
                 border-radius: 16px 0 0 16px;
@@ -124,15 +125,58 @@ a {
             /* SEARCH - FILTERS */
           
                 /*  SEARCH - FILTERS - LIST -ITEMS */
-                
-                .search-filters .fas{
-                        color: var(--blue);
+                .search-filters,
+                .search-filters-list-items,
+                .search-filter-item {
+                    display: flex;
+                    align-items: center;
+                }
+            
+                .search-filters-list-items {
+                    gap:26px;
+                    flex-wrap: wrap;
+                }
+              
+                .search-filter-item {
+                    border:2px solid var(--grey-light);
+                    border-radius: 32px;
+                    transition: 180ms all ease;
                 }
 
-            /* SEARCH INFO RESULTS */
-            .search-info-result .fas {
-                color:var(--blue)
-            }
+                .search-filter-item:hover{
+                    background-color: var(--blue);
+                    color: white;
+                    cursor: pointer;
+                    transform: scale(1.02);
+                }
+
+                .search-filters .fas{
+                    color: var(--blue);
+                    background-color: var(--blue-light);
+                    /* padding:18px;  */
+                    border-radius: 50%;  
+                    margin:-3px;  
+                    width: 48px;  
+                    height: 48px;  
+                    display: flex;  
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .filter-label {
+                    font-weight: bold;
+                    padding: 14px;
+                }
+               
+                .search-filters-list-items h2 {
+                    font-size: 16px;
+                }
+
+                /* SEARCH INFO RESULTS */
+                .search-info-result .fas {
+                    color:var(--blue);
+                    
+                }
 
 
     /* SECTION LODGINGS LIST*/
@@ -158,6 +202,7 @@ footer {
 
 /* MOBILE */
 @media (max-width:768px) {
+    /* NAV */
     .nav-menu {
        flex-basis: 100%;
     }
@@ -183,6 +228,8 @@ footer {
     #icon-search {
         display: inline;
     }
+
+    /* FILTERS */
     
 
 }
