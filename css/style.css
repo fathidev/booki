@@ -82,8 +82,8 @@ a {
             .search-form {
                 display: flex;
             }
-          
-            .search-form i {
+            /* ICON GEOLOC */
+            .fas.fa-map-marker-alt{
                 padding: 16px 16px;
                 background-color: var(--grey-light);
                 border-radius: 16px 0 0 16px;
@@ -113,12 +113,21 @@ a {
                 cursor: pointer;
             }
 
+            #icon-search {
+                display: none;
+            }
+            
+            
+            
+            
                 
             /* SEARCH - FILTERS */
+          
                 /*  SEARCH - FILTERS - LIST -ITEMS */
-                    .search-filters .fas{
+                
+                .search-filters .fas{
                         color: var(--blue);
-                    }
+                }
 
             /* SEARCH INFO RESULTS */
             .search-info-result .fas {
@@ -165,4 +174,15 @@ footer {
     #nav-logo {
         margin: auto;
     }
+    /* SEARCH */
+    /* HIDDEN THE TEXT "RECHERCHER" */
+    .search-button-text {
+        display: none;
+    }
+    /* DISPLAY ICON SEARCH */
+    #icon-search {
+        display: inline;
+    }
+    
+
 }
