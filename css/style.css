@@ -376,7 +376,10 @@ footer {
 }
 .sub-section-footer a {
     padding-bottom: 5px;
-} 
+}
+.sub-section-footer a:hover{
+    color: var(--blue);
+}
 
 
 /* FOOTER END */
