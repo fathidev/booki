@@ -4,9 +4,9 @@
 
 /* COLORS SPECIFICATIONS */
 :root {
-    --blue:#0065FC;
-    --blue-light:#DEEBFF;
-    --grey-light:#F2F2F2;
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --grey-light: #F2F2F2;
 }
 
 /* WILDCARD SELECTOR */
@@ -35,158 +35,327 @@ a {
 
 /* HEADER */
 
-    /* NAV */
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        margin-bottom: -27px;
-    }
-    .nav-menu {
-        display: flex;
-    }
-    .nav-menu a {
-        padding:20px;
-        border-top: 3px solid transparent;
-        font-size: medium;
-    }
-    .nav-menu a:hover{
-        border-top-color: var(--blue);
-        color: var(--blue);
-    }
-    #nav-logo {
-        margin-right: auto;
-        padding :18px; 
-        width: 130px;
-    }
-    
-    
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: -27px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    padding: 20px;
+    border-top: 3px solid transparent;
+    font-size: medium;
+}
+
+.nav-menu a:hover {
+    border-top-color: var(--blue);
+    color: var(--blue);
+}
+
+#nav-logo {
+    margin-right: auto;
+    padding: 18px;
+    width: 130px;
+}
+
+
 /*  HEADER END */
 
 /* MAIN */
 
-    /* SECTION SEARCH */
-        /* SEARCH-INTRO */
-            /* SEARCH-INTRO-TITLE & SUB-TITLE*/
-            #search-intro-title {
-                margin-bottom: -7px ;
-                font-size:20px;
-            }
-            #search-intro-sub-title {
-                font-size:16px;
-                margin-bottom: 15px;
+/* SECTION SEARCH */
+/* SEARCH-INTRO */
+/* SEARCH-INTRO-TITLE & SUB-TITLE*/
+#search-intro-title {
+    margin-bottom: -7px;
+    font-size: 20px;
+}
 
-            }
-            /* SEARCH FORM */
-            .search-form {
-                display: flex;
-                margin-bottom: 29px;
-            }
-            /* ICON GEOLOC */
-            #icon-geoloc{
-                padding: 16px 16px;
-                background-color: var(--grey-light);
-                border-radius: 16px 0 0 16px;
-            }
+#search-intro-sub-title {
+    font-size: 16px;
+    margin-bottom: 15px;
 
-            .search-form input {
-                flex-basis: 45px;
-                padding-left: 10px;
-                border: 1px solid var(--grey-light);   
-            }
+}
 
-            .search-form input::placeholder {
-                font-size: 14px;
-                color: black;
-                font-weight: bold;
+/* SEARCH FORM */
+.search-form {
+    display: flex;
+    margin-bottom: 29px;
+}
 
-            }
+/* ICON GEOLOC */
+#icon-geoloc {
+    padding: 16px 16px;
+    background-color: var(--grey-light);
+    border-radius: 16px 0 0 16px;
+}
 
-            .search-form button {
-                background-color: var(--blue);
-                color: white;
-                font-weight: bold;
-                font-size: 16px;
-                border-radius: 0 16px 16px 0;
-                padding: 0 20px;
-                border: none;
-                cursor: pointer;
-            }
+.search-form input {
+    flex-basis: 45px;
+    padding-left: 10px;
+    border: 1px solid var(--grey-light);
+}
 
-            #icon-search {
-                display: none;
-            }
-            
-            
-            
-            
-                
-            /* SEARCH - FILTERS */
-          
-                /*  SEARCH - FILTERS - LIST -ITEMS */
-                .search-filters,
-                .search-filters-list-items,
-                .search-filter-item {
-                    display: flex;
-                    align-items: center;
-                }
-            
-                .search-filters-list-items {
-                    gap:26px;
-                    flex-wrap: wrap;
-                }
-              
-                .search-filter-item {
-                    border:2px solid var(--grey-light);
-                    border-radius: 32px;
-                    transition: 180ms all ease;
-                }
+.search-form input::placeholder {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
 
-                .search-filter-item:hover{
-                    background-color: var(--blue);
-                    color: white;
-                    cursor: pointer;
-                    transform: scale(1.02);
-                }
+}
 
-                .search-filters .fas{
-                    color: var(--blue);
-                    background-color: var(--blue-light);
-                    /* padding:18px;  */
-                    border-radius: 50%;  
-                    margin:-3px;  
-                    width: 48px;  
-                    height: 48px;  
-                    display: flex;  
-                    justify-content: center;
-                    align-items: center;
-                }
+.search-form button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0 16px 16px 0;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+    transition: 180ms all ease;
+}
 
-                .filter-label {
-                    font-weight: bold;
-                    padding: 14px;
-                }
-               
-                .search-filters-list-items h2 {
-                    font-size: 16px;
-                }
+.search-form button:hover {
+    transform: scale(1.02)
+}
 
-                /* SEARCH INFO RESULTS */
-                .search-info-result .fas {
-                    color:var(--blue);
-                    
-                }
+#icon-search {
+    display: none;
+}
+
+/* SEARCH - FILTERS */
+
+/*  SEARCH - FILTERS - LIST -ITEMS */
+.search-filters,
+.search-filters-list-items,
+.search-filter-item {
+    display: flex;
+    align-items: center;
+}
+
+.search-filters-list-items {
+    gap: 26px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.search-filter-item {
+    border: 2px solid var(--grey-light);
+    border-radius: 32px;
+    transition: 180ms all ease;
+}
+
+.search-filter-item:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.search-filters .fas {
+    color: var(--blue);
+    background-color: var(--blue-light);
+    /* padding:18px;  */
+    border-radius: 50%;
+    margin: -3px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-label {
+    font-weight: bold;
+    padding: 14px;
+}
+
+.search-filters-list-items h2 {
+    font-size: 16px;
+}
+
+/* SEARCH INFO RESULTS */
+.search-info-result {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.search-info-result .fas {
+    color: var(--blue);
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--blue-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
-    /* SECTION LODGINGS LIST*/
-       /* COLORS STARS FOR GRADE OF CITY & POPULAR */
-        .star-blue {
-            color: var(--blue);
-        }
-        .star-blue-light {
-            color: var(--blue-light);
-        }
+/* SECTION ACCOMODATIONS LIST*/
+
+.accomodations-list {
+    display: flex;
+    gap: 16px
+}
+
+.accomodations-list .city,
+.accomodations-list .popular {
+    background-color: var(--grey-light);
+    padding:34px;
+    border-radius: 16px;
+}
+
+@media (max-width:768px)  {
+    .accomodations-list .city{
+        background-color: white;
+    }    
+}
+
+.accomodations-list .city {
+    flex-basis: 66%;
+}
+
+.accomodations-list .popular {
+    flex-basis: 33%;
+}
+
+.title-section {
+margin-top:  0px;
+}
+
+/* CITY */
+
+.city-display-more {
+    font-weight: bold;
+}
+
+.city-accomodations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+
+/* CARD */
+.city-accomodation-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 4px;
+    box-shadow: 0 0 16px #bbb4b3;
+    flex-grow: 1;
+    width: 29%;
+    min-width: 150px;
+}
+
+.city-accomodation-card h3,
+.city-accomodation-card p,
+.city-accomodation-card .stars {
+    margin: 5px;
+}
+
+.city-accomodation-card h3 {
+ font-size: 14px;
+}
+.city-accomodation-card p {
+    font-size: 12px;
+   }
+   
+.city-accomodation-card img {
+    border-radius: 16px 16px 0 0;
+    height: 128px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.star-blue {
+    color: var(--blue);
+}
+
+.star-blue-light {
+    color: var(--blue-light);
+}
+
+/* POPULAR */
+.accomodations-list .popular-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accomodations-list .popular-items div {
+    border: 1px solid blue;
+}
+
+.popular-title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.popular-details h3 {
+    font-size: 14px;
+}
+/* POPULAR CARD */
+.popular-card  {
+    display: flex;
+    background-color: white;
+    border-radius: 16px;
+    padding: 4px;
+    box-shadow: 0 0 16px #bbb4b3;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.popular-card img{
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+}
+
+
+.popular-list {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-details .stars,
+.popular-details h3,
+.popular-details p {
+    margin: 5px;
+}
+.popular-details p{
+    font-size: 12px;
+}
+/* .pic-popular{
+    flex-basis: 40%;
+}
+.popular-details{
+    flex-basis: 60%;
+} */
+
+.popular-card a {
+    display: flex;
+}
+
+
+
+
 
 /* MAIN END */
 
@@ -195,6 +364,20 @@ a {
 footer {
     background-color: var(--grey-light);
 }
+.sections-footer{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sub-section-footer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.sub-section-footer a {
+    padding-bottom: 5px;
+} 
+
 
 /* FOOTER END */
 
@@ -202,34 +385,66 @@ footer {
 
 /* MOBILE */
 @media (max-width:768px) {
+
     /* NAV */
     .nav-menu {
-       flex-basis: 100%;
+        flex-basis: 100%;
     }
+
     .nav-menu a {
         flex-basis: 50%;
         text-align: center;
-        border-bottom:3px solid var(--grey-light);
+        border-bottom: 3px solid var(--grey-light);
     }
+
     .nav-menu a:hover {
-        border-bottom-color:var(--blue);
+        border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
 
     #nav-logo {
         margin: auto;
     }
+
     /* SEARCH */
     /* HIDDEN THE TEXT "RECHERCHER" */
     .search-button-text {
         display: none;
     }
+
     /* DISPLAY ICON SEARCH */
     #icon-search {
         display: inline;
     }
 
     /* FILTERS */
-    
+
+
+    /* SECTION ACCOMODATIONS */
+    .accomodations-list {
+        flex-direction: column;
+    }
+
+    .popular {
+        order: -1;
+    }
+
+    .accomodations-list .popular-items {
+        order: -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* FOOTER */
+    .sections-footer {
+        flex-direction: column;
+    }
+    .sub-section-footer {
+        width: 100%;
+    }
+
+
+
 
 }
