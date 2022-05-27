@@ -322,6 +322,9 @@ height: 600px;
 }
 .description-pic-activity {
     font-size: 12px;
+    padding-left: 12px;
+    height: 40px;
+    background-color: white;
 }
 
 /* MAIN END */
