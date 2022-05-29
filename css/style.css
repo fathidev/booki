@@ -320,7 +320,7 @@ nav {
     box-shadow: 0 0 16px #bbb4b3;
     flex-grow: 1;
     flex-direction: row;
-    /* min-width: 248px; */
+    min-width: 248px;
 }
 .popular-card img{
     height: 128px;
