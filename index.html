@@ -21,7 +21,7 @@
                 <img id="nav-logo" src="/images/logo/Booki@3x.png" alt="logo booki">
                 <div class="nav-menu">
                     <a href="#accomodations">Hébergements</a>
-                    <a href="#activities">Activités</a>
+                    <a href="#page-activities">Activités</a>
                 </div>
             </nav>
             <!-- NAV END -->
@@ -80,7 +80,7 @@
                 <!-- SEARCH INFO RESULTS -->
                 <div class="search-info-result">
                     <i class="fas fa-info"></i>
-                    <span class="search-info-result-text">Plus de 500 logements sont disponibles dans cette ville</span>
+                    <p class="search-info-result-text">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
                 <!-- SEARCH INFO RESULTS END -->
             </section>
@@ -184,6 +184,7 @@
                     <a class="city-display-more" href="#">Afficher plus</a>
                 </div>
                 <!-- POPULAR -->
+                <!-- POPULAR -->
                 <div class="popular">
                     <div class="popular-title-flex">
                         <h2 class="title-section">Les plus populaires</h2>
@@ -194,8 +195,10 @@
                             <a href="#">
                                 <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre Hôtel Le Soleil du matin">
                                 <div class="popular-details">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de <strong>128€</strong></p>
+                                    <div class="popular-details-text">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        <p>Nuit à partir de <strong>128€</strong></p>
+                                    </div>
                                     <div class="stars">
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
@@ -210,14 +213,16 @@
                             <a href="#">
                                 <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'Hôtes Au coeur de l'eau">
                                 <div class="popular-details">
-                                    <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                    <div class="popular-details-text">
+                                        <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                                        <p>Nuit à partir de <strong>71€</strong></p>
+                                    </div>
                                     <div class="stars">
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
-                                        <i class="fas fa-star star-blue fa-2xs"></i>
+                                        <i class="fas fa-star star-blue-light fa-2xs"></i>
                                     </div>
                                 </div>
                             </a>
@@ -226,64 +231,87 @@
                             <a href="#">
                                 <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre Hôtel Tout bleu et blanc">
                                 <div class="popular-details">
-                                    <h3>Hôtel tout bleu et blanc</h3>
-                                    <p>Nuit à partir de <strong>68€</strong></p>
+                                    <div class="popular-details-text">
+                                        <h3>Hôtel tout bleu et blanc</h3>
+                                        <p>Nuit à partir de <strong>68€</strong></p>
+                                    </div>
                                     <div class="stars">
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
                                         <i class="fas fa-star star-blue fa-2xs"></i>
-                                        <i class="fas fa-star star-blue fa-2xs"></i>
+                                        <i class="fas fa-star star-blue-light fa-2xs"></i>
                                     </div>
                                 </div>
                             </a>
                         </div>
                     </div>        
                 </div>
-            </section>
+            </section> 
 
             <!-- SECTION ACTIVITIES -->
-            <section id="activities" class="activities">
+            <section id="page-activities"> 
                 <h2 class="title-section">Activités à Marseille</h2>
-                <div class="container-activities">
-                    <a href="#" class="activity-card1">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                <div class="card_activities">
+                    <div class="card_one">
+                        <a href="#">
+                            <div class="one_image margin-none">
+                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
+                                <h3>Vieux Port</h3>
+                            </div>  
+                        </a>
+                    </div>
+
+                    <div class="card_group">
+                        <div class="card_group_1">
+                            <a href="#">
+                                <figure class="margin-none">
+                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
+                                    <h3>Fort de Pomègues</h3>
+                                </figure>  
+                            </a>
                         </div>
-                        <h3 class="description-pic-activity">Vieux Port</h3>
-                    </a>
-                    <a href="#" class="activity-card2">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+
+                        <div class="card_group_2">
+                            <a href="#">
+                                <figure class="margin-none">
+                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul"/>
+                                    <h3>Îles du Frioul</h3>
+                                </figure>  
+                            </a>
                         </div>
-                        <h3 class="description-pic-activity">Fort de Pomègues</h3>
-                    </a>
-                    <a href="#" class="activity-card3">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                    </div>
+
+                    <div class="card_one">
+                        <a href="#">
+                            <figure  class="one_image margin-none">
+                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques"/>
+                                <h3>Parc national des Calanques</h3>
+                            </figure>  
+                        </a>
+                    </div>
+
+                    <div class="card_group">
+                        <div class="card_group_3">
+                            <a href="#">
+                                <figure class="margin-none">
+                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </figure>  
+                            </a>
                         </div>
-                        <h3 class="description-pic-activity">Île du Frioul</h3>
-                    </a>
-                    <a href="#" class="activity-card4">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+
+                        <div class=card_group_4>
+                            <a href="#">
+                                <figure class="margin-none">
+                                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps"/>
+                                    <h3>Parc Longchamp</h3>
+                                </figure>  
+                            </a>
                         </div>
-                        <h3 class="description-pic-activity">Parc National des Calanques</h3>
-                    </a>
-                    <a href="#" class="activity-card5">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                        </div>
-                        <h3 class="description-pic-activity ">Notre-Dame-de-la-Garde</h3>
-                    </a>
-                    <a href="#" class="activity-card6">
-                        <div>
-                            <img class="wrapp-image-card" src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                        </div>
-                        <h3 class="description-pic-activity">Parc Longchamp</h3>
-                    </a>
-                </div>
-            </section>
+                    </div>
+            </div>
+            </section>  
             <!-- SECTION ACTIVITIES END -->
         </main>
         <!-- MAIN END -->

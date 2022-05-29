@@ -1,29 +1,28 @@
-/* IMPORT OF PROJECT FONT */
-/* Import font Raleway from Google Font */
+/* importation de la police de caractère Raleway depuis Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
-/* COLORS SPECIFICATIONS */
+/* Codes couleurs du projet */
 :root {
     --blue: #0065FC;
     --blue-light: #DEEBFF;
     --grey-light: #F2F2F2;
 }
 
-/* WILDCARD SELECTOR */
+/* Sélecteur universel */
 * {
-    /* application boox-sizing on all éléments */
+    /* application de box-sing sur tous les éléments */
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
-    /* text-decoration: none; */
+    /* affectation de la police Raleway, avec une de secours universelle */
 }
 
-/* remove internal and external margins all over the body */
+/* suppression des marges internes et externes sur tout le Body */
 body {
     padding: 0px;
     margin: 0px;
 }
 
-/*  add padding for search + main + sections-footer */
+/*  ajout d'un padding sur les parties search + main + sections-footer */
 .wrapper {
     padding: 25px
 }
@@ -33,15 +32,34 @@ a {
     text-decoration: none;
 }
 
+/* toutes les images sont en fit-cover */
+img {
+    object-fit: cover;
+}
+
+.title-section {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
 /* HEADER */
 
 /* NAV */
+
+/* mettre le menu tout à droite */
 nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-bottom: -27px;
+}
+
+/* mettre le logo à gauche et fixer sa taille */
+#nav-logo {
+    margin-right: auto;
+    padding: 18px;
+    width: 130px
 }
 
 .nav-menu {
@@ -51,51 +69,53 @@ nav {
 .nav-menu a {
     padding: 20px;
     border-top: 3px solid transparent;
-    font-size: medium;
+    font-size: 16px;
 }
 
 .nav-menu a:hover {
     border-top-color: var(--blue);
     color: var(--blue);
 }
-
-#nav-logo {
-    margin-right: auto;
-    padding: 18px;
-    width: 130px;
-}
 /*  HEADER END */
 
+
 /* SECTION SEARCH */
-/* SEARCH-INTRO */
+
+/* Trouvez votre hébergement pour des vacances de rêve */
 #search-intro-title {
     margin-bottom: -7px;
     font-size: 20px;
 }
+/* En plein centre ville ou en pleine nature */
 #search-intro-sub-title {
     font-size: 16px;
     margin-bottom: 15px;
 }
-/* SEARCH FORM */
+
+/* SECTION SEARCH FORM */
 .search-form {
     display: flex;
     margin-bottom: 29px;
 }
+
 #icon-geoloc {
     padding: 16px 16px;
     background-color: var(--grey-light);
     border-radius: 16px 0 0 16px;
 }
+
 .search-form input {
     flex-basis: 45px;
     padding-left: 10px;
     border: 1px solid var(--grey-light);
 }
+
 .search-form input::placeholder {
     font-size: 14px;
     color: black;
     font-weight: bold;
 }
+
 .search-form button {
     background-color: var(--blue);
     color: white;
@@ -107,41 +127,48 @@ nav {
     cursor: pointer;
     transition: 180ms all ease;
 }
+
 .search-form button:hover {
     transform: scale(1.02)
 }
+
 #icon-search {
     display: none;
 }
 
 /* SEARCH - FILTERS */
 
-/*  SEARCH - FILTERS - LIST -ITEMS */
+/*  LIST -ITEMS */
 .search-filters,
 .search-filters-list-items,
 .search-filter-item {
     display: flex;
     align-items: center;
 }
+
 .search-filters-list-items {
     gap: 26px;
     flex-wrap: wrap;
     margin-bottom: 32px;
 }
+
 .search-filters-list-items h2 {
     font-size: 16px;
 }
+
 .search-filter-item {
     border: 2px solid var(--grey-light);
     border-radius: 32px;
     transition: 180ms all ease;
 }
+
 .search-filter-item:hover {
     background-color: var(--blue);
     color: white;
     cursor: pointer;
     transform: scale(1.02);
 }
+
 .search-filters .fas {
     color: var(--blue);
     background-color: var(--blue-light);
@@ -153,6 +180,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .filter-label {
     font-weight: bold;
     padding: 14px;
@@ -165,6 +193,7 @@ nav {
     gap: 14px;
     flex-wrap: wrap;
 }
+
 .search-info-result .fas {
     color: var(--blue);
     width: 26px;
@@ -180,37 +209,32 @@ nav {
 
 .accomodations-list {
     display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 25px;
 }
 
 .accomodations-list .city,
 .accomodations-list .popular {
     background-color: var(--grey-light);
-    padding:34px;
+    padding: 34px;
     border-radius: 16px;
 }
 
-@media (max-width:768px)  {
-    .accomodations-list .city{
-        background-color: white;
-    }    
-}
+/* Fixer la largeur des 2 sections : city & popular*/
 .accomodations-list .city {
     flex-basis: 66%;
 }
+
 .accomodations-list .popular {
     flex-basis: 33%;
 }
-.title-section {
-margin-top:  0px;
-font-size: 20px;
-}
+
+
 /* CITY */
 
 .city-display-more {
     font-weight: bold;
 }
+
 .city-display-more:hover {
     color: var(--blue);
 }
@@ -222,7 +246,8 @@ font-size: 20px;
     justify-content: space-around;
     margin-bottom: 16px;
 }
-/* CARD */
+
+/* CITY CARD */
 .city-accomodation-card {
     background-color: white;
     border-radius: 16px;
@@ -232,26 +257,32 @@ font-size: 20px;
     width: 29%;
     min-width: 150px;
 }
+
 .city-accomodation-card h3,
 .city-accomodation-card p,
 .city-accomodation-card .stars {
     margin: 5px;
 }
+
 .city-accomodation-card h3 {
- font-size: 14px;
+    font-size: 14px;
 }
+
 .city-accomodation-card p {
     font-size: 12px;
 }
+
 .city-accomodation-card img {
     border-radius: 16px 16px 0 0;
     height: 128px;
     width: 100%;
     object-fit: cover;
 }
+
 .star-blue {
     color: var(--blue);
 }
+
 .star-blue-light {
     color: var(--blue-light);
 }
@@ -263,6 +294,13 @@ font-size: 20px;
     gap: 16px;
 }
 
+.accomodations-list .popular-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* pour aligner le titre "Les plus populaires" avec l'étoile et mettre celle-ci à droite */
 .popular-title-flex {
     display: flex;
     flex-direction: row;
@@ -271,6 +309,7 @@ font-size: 20px;
 }
 .popular-details h3 {
     font-size: 14px;
+    padding-bottom: 5px;
 }
 /* POPULAR CARD */
 .popular-card  {
@@ -281,7 +320,7 @@ font-size: 20px;
     box-shadow: 0 0 16px #bbb4b3;
     flex-grow: 1;
     flex-direction: row;
-    min-width: 150px;
+    /* min-width: 248px; */
 }
 .popular-card img{
     height: 128px;
@@ -299,6 +338,18 @@ font-size: 20px;
 .popular-details p {
     margin: 5px;
 }
+
+.popular-details {
+    display: flex;
+    flex-direction: column;
+    height: 128px;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.popular-details .stars {
+    padding-bottom: 5px;
+}
+
 .popular-details p{
     font-size: 12px;
 }
@@ -306,25 +357,82 @@ font-size: 20px;
     display: flex;
 }
 
-
-/* ACTIVITIES */
-
-.activities {
-    padding:34px; 
-    border: 1px solid red;
+/* activities */
+#page-activities {
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
-.container-activities {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-width: 100%;
-height: 600px;
+
+#page-activities h3 {
+    font-size: 13px;
+    padding-left: 15px;
 }
-.description-pic-activity {
-    font-size: 12px;
-    padding-left: 12px;
-    height: 40px;
-    background-color: white;
+
+/* conteneur qui contient les différentes cartes */
+.card_activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* toutes les images du conteneur prennent 100% en largeur par rapport au parent */
+.card_activities img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0 0 16px #bbb4b3;
+}
+
+/* fixer la largeur des conteneurs avec un seule photo */
+.card_one {
+    width: 23%;
+    background-color: #ffff;
+    box-shadow: 0 0 16px #bbb4b3;
+    border-radius: 16px 16px 16px 16px;
+}
+
+/* fixer la largeur + mise en colonne des conteneurs qui contiennent deux photos */
+.card_group {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_group_1,
+.card_group_2,
+.card_group_3,
+.card_group_4 {
+    background-color: #ffff;
+    box-shadow: 0 0 16px #bbb4b3;
+    border-radius: 16px 16px 16px 16px;
+}
+
+/* les 2 grandes images */
+.card_one img {
+    height: 400px;
+}
+
+/* image 1 du 1er groupe */
+.card_group_1 img {
+    height: 190px;
+}
+/* image 2 du 1er groupe */
+.card_group_2 img {
+    height: 125px;
+}
+/* image 1 du 2ème groupe */
+.card_group_3 img {
+    height: 170px;
+}
+/* image 2ème du 2ème groupe */
+.card_group_4 img {
+    height: 145px;
+}
+
+/* pour supprimer les marges des figures */
+.margin-none {
+    margin: 0px;
 }
 
 /* MAIN END */
@@ -333,32 +441,38 @@ height: 600px;
 footer {
     background-color: var(--grey-light);
 }
-.sections-footer{
+
+.sections-footer {
     display: flex;
     justify-content: space-evenly;
 
 }
+
 .sub-section-footer {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
+
 .sub-section-footer a {
     padding-bottom: 5px;
 }
-.sub-section-footer a:hover{
+
+.sub-section-footer a:hover {
     color: var(--blue);
 }
 
-
 /* FOOTER END */
 
-/* MEDIA */
 
 /* MOBILE */
 @media (max-width:768px) {
 
-    /* NAV */
+    /* nav */
+    .main {
+        margin: 0;
+    }
+
     .nav-menu {
         flex-basis: 100%;
     }
@@ -374,42 +488,77 @@ footer {
         border-top-color: transparent;
     }
 
+    /* mettre le logo au centre */
     #nav-logo {
         margin: auto;
     }
 
     /* SEARCH */
-    /* HIDDEN THE TEXT "RECHERCHER" */
+    /* cacher le texte du bouton "rechercher*/
     .search-button-text {
         display: none;
     }
 
-    /* DISPLAY ICON SEARCH */
+    /* afficher l'icône "loupe" rechercher*/
     #icon-search {
         display: inline;
     }
+
     /* SECTION ACCOMODATIONS */
     .accomodations-list {
         flex-direction: column;
+        flex-basis: 100%;
     }
 
+    /* passage du background de la section Hébergements en blanc */
+    .accomodations-list .city {
+        background-color: white;
+    }
+
+    /* mettre la partie populaire en 1er */
     .popular {
         order: -1;
     }
 
     .accomodations-list .popular-items {
-        order: -1;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+
+    /* activités à Marseille */
+    .card_activities {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* mettre un gap de 30 px entre chaque élements du conteneur */
+    }
+
+    .card_one,
+    .card_group {
+        width: 100%;
+        /* chaque contenant prend 100% de la taille du parent */
+    }
+
+    .card_group {
+        gap: 30px;
+        /* mettre un gap de 30px entre chaque élément de chaque groupe */
+    }
+
+    .card_one img,
+    .card_group_1 img,
+    .card_group_2 img {
+        height: 150px;
+        /* chaque image a 150px de hauteur */
     }
 
     /* FOOTER */
     .sections-footer {
         flex-direction: column;
     }
+
     .sub-section-footer {
         width: 100%;
     }
-
 }
