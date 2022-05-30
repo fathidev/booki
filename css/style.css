@@ -190,19 +190,23 @@ nav {
 .search-info-result {
     display: flex;
     align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
 }
 
 .search-info-result .fas {
     color: var(--blue);
-    width: 26px;
-    height: 26px;
-    border: 1px solid var(--blue-light);
-    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 5px 8px;
+    font-size: 12px;
+    /* centrer le i dans son rond */
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.search-info-result p {
+    margin-left: 15px;
 }
 
 /* SECTION ACCOMODATIONS LIST*/
@@ -339,6 +343,7 @@ nav {
     margin: 5px;
 }
 
+/* pour mettre un écart identique entre le bloc text et les stars */
 .popular-details {
     display: flex;
     flex-direction: column;
