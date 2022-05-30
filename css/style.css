@@ -473,11 +473,12 @@ footer {
 /* MOBILE */
 @media (max-width:768px) {
 
-    /* nav */
+
+    
     .main {
         margin: 0;
     }
-
+    /* nav */
     .nav-menu {
         flex-basis: 100%;
     }
@@ -518,7 +519,11 @@ footer {
     /* passage du background de la section Hébergements en blanc */
     .accomodations-list .city {
         background-color: white;
+        padding-left: 0px;/* suppression des paddings right et left de la rubrique city - hébergements */
+        padding-right: 0px;
     }
+ 
+
 
     /* mettre la partie populaire en 1er */
     .popular {
