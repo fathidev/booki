@@ -508,6 +508,13 @@ footer {
         display: inline;
     }
 
+    /* mettre un flex-basis de 100% sur le titre h2 pour pousser les filtres à la ligne + margin de 0px */
+    .search-filters-list-items h2 {
+        flex-basis:100%;
+        margin: 0px;
+
+    }
+
     /* SECTION ACCOMODATIONS */
     .accomodations-list {
         flex-direction: column;
@@ -525,8 +532,6 @@ footer {
         width: 100%;
     }
  
-
-
     /* mettre la partie populaire en 1er */
     .popular {
         order: -1;
