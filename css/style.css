@@ -460,7 +460,7 @@ footer {
 }
 
 .sub-section-footer a {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .sub-section-footer a:hover {
@@ -469,12 +469,10 @@ footer {
 
 /* FOOTER END */
 
-
 /* MOBILE */
 @media (max-width:768px) {
 
-
-    
+   
     .main {
         margin: 0px;
     }
