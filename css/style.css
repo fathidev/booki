@@ -476,7 +476,7 @@ footer {
 
     
     .main {
-        margin: 0;
+        margin: 0px;
     }
     /* nav */
     .nav-menu {
@@ -519,7 +519,7 @@ footer {
     /* passage du background de la section Hébergements en blanc */
     .accomodations-list .city {
         background-color: white;
-        padding-left: 0px;/* suppression des paddings right et left de la rubrique city - hébergements */
+        padding-left: 0px;
         padding-right: 0px;
     }
     /* mettre les cartes en 100% de largeur */
@@ -539,6 +539,12 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+  
+    .accomodations-list .popular {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 0px;
     }
 
 
