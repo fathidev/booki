@@ -484,6 +484,10 @@ footer {
 /* MOBILE */
 @media (max-width:768px) {
 
+    body {
+        background-color:green;
+         
+    }
 
     .main {
         margin: 0px;
@@ -601,13 +605,14 @@ footer {
     }
 }
 
+/* TABLETTE */
 @media screen and (max-width: 992px) and (min-width: 769px) {
     
     /*  fond rouge pour phase de test */
-    /* body {
+    body {
         background-color:red;
          
-    } */
+    }
 
     /* nav */
 
