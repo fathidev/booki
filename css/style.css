@@ -76,6 +76,7 @@ nav {
     border-top-color: var(--blue);
     color: var(--blue);
 }
+
 /*  HEADER END */
 
 
@@ -86,6 +87,7 @@ nav {
     margin-bottom: -7px;
     font-size: 20px;
 }
+
 /* En plein centre ville ou en pleine nature */
 #search-intro-sub-title {
     font-size: 16px;
@@ -311,12 +313,14 @@ nav {
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .popular-details h3 {
     font-size: 14px;
     padding-bottom: 5px;
 }
+
 /* POPULAR CARD */
-.popular-card  {
+.popular-card {
     display: flex;
     background-color: white;
     border-radius: 16px;
@@ -326,17 +330,20 @@ nav {
     flex-direction: row;
     min-width: 248px;
 }
-.popular-card img{
+
+.popular-card img {
     height: 128px;
     width: 120px;
     object-fit: cover;
     border-radius: 16px 0 0 16px;
 }
+
 .popular-list {
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
 }
+
 .popular-details .stars,
 .popular-details h3,
 .popular-details p {
@@ -351,13 +358,15 @@ nav {
     justify-content: space-between;
     padding-left: 10px;
 }
+
 .popular-details .stars {
     padding-bottom: 5px;
 }
 
-.popular-details p{
+.popular-details p {
     font-size: 12px;
 }
+
 .popular-card a {
     display: flex;
 }
@@ -422,14 +431,17 @@ nav {
 .card_group_1 img {
     height: 190px;
 }
+
 /* image 2 du 1er groupe */
 .card_group_2 img {
     height: 125px;
 }
+
 /* image 1 du 2ème groupe */
 .card_group_3 img {
     height: 170px;
 }
+
 /* image 2ème du 2ème groupe */
 .card_group_4 img {
     height: 145px;
@@ -472,10 +484,11 @@ footer {
 /* MOBILE */
 @media (max-width:768px) {
 
-   
+
     .main {
         margin: 0px;
     }
+
     /* nav */
     .nav-menu {
         flex-basis: 100%;
@@ -510,7 +523,7 @@ footer {
 
     /* mettre un flex-basis de 100% sur le titre h2 pour pousser les filtres à la ligne + margin de 0px */
     .search-filters-list-items h2 {
-        flex-basis:100%;
+        flex-basis: 100%;
         margin: 0px;
 
     }
@@ -527,11 +540,12 @@ footer {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     /* mettre les cartes en 100% de largeur */
     .city-accomodation-card {
         width: 100%;
     }
- 
+
     /* mettre la partie populaire en 1er */
     .popular {
         order: -1;
@@ -543,7 +557,7 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-  
+
     .accomodations-list .popular {
         padding-left: 0px;
         padding-right: 0px;
@@ -585,4 +599,38 @@ footer {
     .sub-section-footer {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    
+    /*  fond rouge pour phase de test */
+    /* body {
+        background-color:red;
+         
+    } */
+
+    /* nav */
+
+    /* déplacement du menu prise de toute la largeur  + padding en dessous du menu + centrage du texte */
+    .nav-menu {
+        flex-basis: 100%;
+        padding-bottom: 20px;
+    }
+
+    .nav-menu a {
+        flex-basis: 50%;
+        text-align: center;
+        border-bottom: 3px solid var(--grey-light);
+    }
+
+    .nav-menu a:hover {
+        border-bottom-color: var(--blue);
+        border-top-color: transparent;
+    }
+    /* mettre le logo au centre */
+    #nav-logo {
+        margin: auto;
+    }
+
+
 }
