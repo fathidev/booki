@@ -484,6 +484,8 @@ footer {
 /* MOBILE */
 @media (max-width:768px) {
 
+    /* couleur de fond pour tester */
+
     body {
         background-color:green;
          
@@ -496,6 +498,7 @@ footer {
     /* nav */
     .nav-menu {
         flex-basis: 100%;
+        padding-bottom: 20px;
     }
 
     .nav-menu a {
@@ -540,7 +543,7 @@ footer {
 
     /* passage du background de la section Hébergements en blanc */
     .accomodations-list .city {
-        background-color: white;
+        background-color: transparent;
         padding-left: 0px;
         padding-right: 0px;
     }
