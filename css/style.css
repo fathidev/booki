@@ -631,18 +631,17 @@ footer {
     /*  fond rouge pour phase de test */
     body {
         background-color:red;
-         
     }
 
     /* nav */
 
-    /* déplacement du menu prise de toute la largeur  + padding en dessous du menu + centrage du texte */
+    /* déplacement du menu qui prend toute la largeur  + padding en dessous du menu */
     .nav-menu {
         flex-basis: 100%;
         padding-bottom: 20px;
         padding-right: 0px;
     }
-
+    /* chaque lien du menu fait 50% de largeur et le texte est centré */
     .nav-menu a {
         flex-basis: 50%;
         text-align: center;
