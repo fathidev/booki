@@ -300,12 +300,6 @@ nav {
     gap: 16px;
 }
 
-.accomodations-list .popular-items {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 /* pour aligner le titre "Les plus populaires" avec l'étoile et mettre celle-ci à droite */
 .popular-title-flex {
     display: flex;
@@ -373,7 +367,7 @@ nav {
 
 /* activities */
 #page-activities {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -483,16 +477,15 @@ footer {
 
 /* MOBILE */
 @media (max-width:768px) {
+    /* mise à zéro du wrapper*/
+    .wrapper {
+        padding: 0px;
+    }
 
-    /* couleur de fond pour tester */
-
+    /* couleur de fond pour phase de test*/
     body {
         background-color:green;
          
-    }
-
-    .main {
-        margin: 0px;
     }
 
     /* nav */
@@ -518,6 +511,11 @@ footer {
     }
 
     /* SEARCH */
+    /* on remet un padding de 25px sur la section search */
+    .search.wrapper {
+        padding: 25px;
+    }
+
     /* cacher le texte du bouton "rechercher*/
     .search-button-text {
         display: none;
@@ -541,11 +539,12 @@ footer {
         flex-basis: 100%;
     }
 
-    /* passage du background de la section Hébergements en blanc */
+    
     .accomodations-list .city {
+        /* passage du background de la section Hébergements en transparent */
         background-color: transparent;
-        padding-left: 0px;
-        padding-right: 0px;
+         /* on remet un padding de 25px sur la partie hébergements */
+        padding:25px;
     }
 
     /* mettre les cartes en 100% de largeur */
@@ -558,7 +557,6 @@ footer {
         order: -1;
     }
 
-
     .accomodations-list .popular-items {
         flex-direction: row;
         flex-wrap: wrap;
@@ -566,13 +564,19 @@ footer {
     }
 
     .accomodations-list .popular {
-        padding-left: 0px;
-        padding-right: 0px;
+        /* on remet un padding de 25px sur la partie hébergements et on a un fond gris qui prend la largeur du parent */
+        padding:25px;
+        /* on retire les coins arrondis */
         border-radius: 0px;
     }
 
 
     /* activités à Marseille */
+    /* on remet un padding de 25px sur la partie activités */
+    #page-activities {
+       padding:25px;  
+    }
+   
     .card_activities {
         display: flex;
         flex-direction: column;
@@ -599,6 +603,11 @@ footer {
     }
 
     /* FOOTER */
+
+    footer {
+        /* on remet un padding de 25px sur le footer */
+        padding: 25px;
+    }
     .sections-footer {
         flex-direction: column;
     }
@@ -606,6 +615,11 @@ footer {
     .sub-section-footer {
         width: 100%;
     }
+     
+
+    
+
+
 }
 
 /* TABLETTE */
@@ -639,6 +653,30 @@ footer {
     #nav-logo {
         margin: auto;
     }
+
+    .popular {
+        order: -1;
+        flex-direction: column;
+    }
+
+    .popular-card {
+        flex-basis: 100%;
+    }
+
+    .accomodations-list {
+        flex-direction: column;
+    }
+
+    .accomodations-list .city {
+        flex-basis: 100%;
+    }
+    
+    .accomodations-list .popular {
+        flex-basis: 100%;
+    }
+    
+
+
 
 
 }
