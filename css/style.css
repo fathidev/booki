@@ -601,7 +601,9 @@ footer {
 
     .card_one img,
     .card_group_1 img,
-    .card_group_2 img {
+    .card_group_2 img,
+    .card_group_3 img, 
+    .card_group_4 img{
         height: 150px;
         /* chaque image a 150px de hauteur */
     }
