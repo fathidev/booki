@@ -452,19 +452,20 @@ nav {
 footer {
     background-color: var(--grey-light);
 }
-
+/* le container qui contient les sous-sections en mode flex et avec un espace entre chaque */
 .sections-footer {
     display: flex;
     justify-content: space-evenly;
 
 }
-
+/* chaque sous section est en mode colonne et fait une largeur de 30%  */
 .sub-section-footer {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
+/*  les liens "ancre" ont chacun un padding en bas de 10px */
 .sub-section-footer a {
     padding-bottom: 10px;
 }
@@ -477,7 +478,7 @@ footer {
 
 /* MOBILE */
 @media (max-width:768px) {
-    /* mise à zéro du wrapper*/
+    /* mise à zéro du wrapper */
     .wrapper {
         padding: 0px;
     }
@@ -485,7 +486,6 @@ footer {
     /* couleur de fond pour phase de test*/
     body {
         background-color:green;
-         
     }
 
     /* nav */
@@ -538,7 +538,6 @@ footer {
         flex-direction: column;
         flex-basis: 100%;
     }
-
     
     .accomodations-list .city {
         /* passage du background de la section Hébergements en transparent */
@@ -658,15 +657,23 @@ footer {
     .popular {
         order: -1;
     }
-    /* chaque carte populaire prend 100% de la largeur */
-    .popular-card {
-        flex-basis: 100%;
-    }
+ 
     /*  les deux parties "hébergements" et "les plus populaires" prennent 100% de la largeur */
     .accomodations-list .city {
         flex-basis: 100%;
     }
+
     .accomodations-list .popular {
         flex-basis: 100%;
+    }
+
+    /* chaque carte populaire prend 100% de la largeur */
+    .popular-card {
+        flex-basis: 100%;
+    }
+    /* les ancres des cartes populaires prennent toute la largeur des conteneurs pour être cliquable sur l'ensemble */
+    .popular-card a {
+        flex-basis: 100%;
+
     }
 }
