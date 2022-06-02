@@ -615,11 +615,6 @@ footer {
     .sub-section-footer {
         width: 100%;
     }
-     
-
-    
-
-
 }
 
 /* TABLETTE */
@@ -654,29 +649,24 @@ footer {
         margin: auto;
     }
 
-    .popular {
-        order: -1;
-        flex-direction: column;
-    }
-
-    .popular-card {
-        flex-basis: 100%;
-    }
-
+    /* ACCOMODATIONS & POPULAR */
     .accomodations-list {
         flex-direction: column;
     }
 
+    /* la section "les plus populaires passe devant Hébergements */
+    .popular {
+        order: -1;
+    }
+    /* chaque carte populaire prend 100% de la largeur */
+    .popular-card {
+        flex-basis: 100%;
+    }
+    /*  les deux parties "hébergements" et "les plus populaires" prennent 100% de la largeur */
     .accomodations-list .city {
         flex-basis: 100%;
     }
-    
     .accomodations-list .popular {
         flex-basis: 100%;
     }
-    
-
-
-
-
 }
