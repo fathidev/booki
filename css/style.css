@@ -64,6 +64,7 @@ nav {
 
 .nav-menu {
     display: flex;
+    padding-right: 25px;
 }
 
 .nav-menu a {
@@ -492,6 +493,7 @@ footer {
     .nav-menu {
         flex-basis: 100%;
         padding-bottom: 20px;
+        padding-right: 0px;
     }
 
     .nav-menu a {
@@ -638,6 +640,7 @@ footer {
     .nav-menu {
         flex-basis: 100%;
         padding-bottom: 20px;
+        padding-right: 0px;
     }
 
     .nav-menu a {
