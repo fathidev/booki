@@ -568,6 +568,11 @@ footer {
         /* on retire les coins arrondis */
         border-radius: 0px;
     }
+     /* les ancres des cartes populaires prennent toute la largeur des conteneurs pour être cliquable sur l'ensemble */
+     .popular-card a {
+        flex-basis: 100%;
+
+    }
 
 
     /* activités à Marseille */
