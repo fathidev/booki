@@ -73,17 +73,19 @@ nav {
     width: 130px
 }
 
+/* put flex on nav-menu */
 .nav-menu {
     display: flex;
     padding-right: 25px;
 }
 
+/* features ancre of nav-menu */
 .nav-menu a {
     padding: 20px;
     border-top: 3px solid transparent;
     font-size: 16px;
 }
-
+/*  animation ancre on hover */
 .nav-menu a:hover {
     border-top-color: var(--blue);
     color: var(--blue);
@@ -91,9 +93,7 @@ nav {
 
 /*  HEADER END */
 
-
 /* SECTION SEARCH */
-
 /* title */
 #search-intro-title {
     margin-bottom: -7px;
@@ -118,18 +118,20 @@ nav {
     border-radius: 16px 0 0 16px;
 }
 
+/* input search features */
 .search-form input {
     flex-basis: 45px;
     padding-left: 10px;
     border: 1px solid var(--grey-light);
 }
 
+/* input search text suggestion */
 .search-form input::placeholder {
     font-size: 14px;
     color: black;
     font-weight: bolder;
 }
-
+/* features search button */
 .search-form button {
     background-color: var(--blue);
     color: white;
@@ -142,6 +144,7 @@ nav {
     transition: 180ms all ease;
 }
 
+/* animation on button search */
 .search-form button:hover {
     transform: scale(1.02)
 }
@@ -153,24 +156,27 @@ nav {
 
 /* SEARCH - FILTERS */
 
-/*  LIST -ITEMS */
-.search-filters,
+/* flex & center on container, list-items & items */
+.search-filters, 
 .search-filters-list-items,
 .search-filter-item {
     display: flex;
     align-items: center;
 }
 
+/* gap between filters */
 .search-filters-list-items {
     gap: 26px;
     flex-wrap: wrap;
     margin-bottom: 32px;
 }
 
+/* size of text "Filtres" */
 .search-filters-list-items h2 {
     font-size: 16px;
 }
 
+/* features of filters */
 .search-filter-item {
     border: 2px solid var(--grey-light);
     border-radius: 32px;
@@ -307,13 +313,8 @@ nav {
 }
 
 /* POPULAR */
-.accomodations-list .popular-items {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
 
-/* pour aligner le titre "Les plus populaires" avec l'étoile et mettre celle-ci à droite */
+/* to align the title "Most popular" with the star and put it on the right */
 .popular-title-flex {
     display: flex;
     flex-direction: row;
@@ -321,12 +322,12 @@ nav {
     align-items: flex-start;
 }
 
+/* space bottom title popular*/
 .popular-details h3 {
-    font-size: 14px;
     padding-bottom: 5px;
 }
 
-/* POPULAR CARDS */
+/* features popular cards */
 .popular-card {
     display: flex;
     background-color: white;
@@ -338,18 +339,21 @@ nav {
     min-width: 248px;
 }
 
+/* set image popular cards */
 .popular-card img {
     height: 128px;
     width: 120px;
     border-radius: 16px 0 0 16px;
 }
 
+/* gap between popular cards */
 .popular-list {
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* margin elements details popular cards */
 .popular-details .stars,
 .popular-details h3,
 .popular-details p {
@@ -364,17 +368,19 @@ nav {
     justify-content: space-between;
     padding-left: 10px;
 }
-
+/* space the stars block from the bottom of the card */
 .popular-details .stars {
     padding-bottom: 5px;
 }
-
+/* size of p in details popular cards */
 .popular-details p {
     font-size: 12px;
 }
 
+/* put flex on ancre of cards */
 .popular-card a {
     display: flex;
+    flex-basis: 100%;
 }
 
 /* activities */
@@ -382,9 +388,8 @@ nav {
     margin-top: 30px;
     margin-bottom: 40px;
 }
-
+/* mismatch of title activities*/
 #page-activities h3 {
-    font-size: 13px;
     padding-left: 15px;
 }
 
@@ -396,14 +401,14 @@ nav {
     margin-top: 30px;
 }
 
-/* toutes les images du conteneur prennent 100% en largeur par rapport au parent */
+/* all container images take 100% width of parent */
 .card_activities img {
     width: 100%;
     border-radius: 16px 16px 0px 0px;
     box-shadow: 0 0 16px #bbb4b3;
 }
 
-/* fixer la largeur des conteneurs avec un seule photo */
+/* set the width of the containers with a single photo */
 .card_one {
     width: 23%;
     background-color: #ffff;
@@ -411,7 +416,7 @@ nav {
     border-radius: 16px 16px 16px 16px;
 }
 
-/* fixer la largeur + mise en colonne des conteneurs qui contiennent deux photos */
+/* set the width + column layout of containers that contain 2 photos */
 .card_group {
     width: 23%;
     display: flex;
@@ -419,6 +424,7 @@ nav {
     justify-content: space-between;
 }
 
+/* cards that are in groups of 2 photos */
 .card_group_1,
 .card_group_2,
 .card_group_3,
@@ -428,60 +434,60 @@ nav {
     border-radius: 16px 16px 16px 16px;
 }
 
-/* les 2 grandes images */
+/* the 2 big pictures */
 .card_one img {
     height: 400px;
 }
 
-/* image 1 du 1er groupe */
+/* image 1 of the 1st group */
 .card_group_1 img {
     height: 190px;
 }
 
-/* image 2 du 1er groupe */
+/* image 2 of the 1st group*/
 .card_group_2 img {
     height: 125px;
 }
 
-/* image 1 du 2ème groupe */
+/* image 1 of the 2nd group */
 .card_group_3 img {
     height: 170px;
 }
 
-/* image 2ème du 2ème groupe */
+/* image 2 of the 2nd group */
 .card_group_4 img {
     height: 145px;
 }
 
-/* pour supprimer les marges des figures */
+/* to remove margins from figures */
 .margin-none {
     margin: 0px;
 }
-
 /* MAIN END */
 
 /* FOOTER */
 footer {
     background-color: var(--grey-light);
 }
-/* le container qui contient les sous-sections en mode flex et avec un espace entre chaque */
+/* the container that contains the subsections in flex mode and with a space between each */
 .sections-footer {
     display: flex;
     justify-content: space-evenly;
 
 }
-/* chaque sous section est en mode colonne et fait une largeur de 30%  */
+/* each subsection is in column mode and is 30% wide */
 .sub-section-footer {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
-/*  les liens "ancre" ont chacun un padding en bas de 10px */
+/*  the "ancre" links each have a padding at the bottom of 10px*/
 .sub-section-footer a {
     padding-bottom: 10px;
 }
 
+/* change color of links on hover */
 .sub-section-footer a:hover {
     color: var(--blue);
 }
@@ -490,56 +496,59 @@ footer {
 
 /* MOBILE */
 @media (max-width:768px) {
-    /* mise à zéro du wrapper */
+    /* wrapper zero */
     .wrapper {
         padding: 0px;
     }
 
-    /* couleur de fond pour phase de test*/
+    /* background color for test phase */
     body {
         background-color:green;
     }
 
-    /* nav */
+    /* NAV */
+    /* the navigation menu takes the full width */
     .nav-menu {
         flex-basis: 100%;
         padding-bottom: 20px;
         padding-right: 0px;
     }
 
+    /* each link takes half the menu */
     .nav-menu a {
         flex-basis: 50%;
         text-align: center;
         border-bottom: 3px solid var(--grey-light);
     }
 
+    /* links animation on hover*/
     .nav-menu a:hover {
         border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
 
-    /* mettre le logo au centre */
+    /* put the logo in the center */
     #nav-logo {
         margin: auto;
     }
 
     /* SEARCH */
-    /* on remet un padding de 25px sur la section search */
+    /* we put a padding of 25px on the search section */
     .search.wrapper {
         padding: 25px;
     }
 
-    /* cacher le texte du bouton "rechercher*/
+    /* hide the text of the "search" button */
     .search-button-text {
         display: none;
     }
 
-    /* afficher l'icône "loupe" rechercher*/
+    /* display the icon search */
     #icon-search {
         display: inline;
     }
 
-    /* mettre un flex-basis de 100% sur le titre h2 pour pousser les filtres à la ligne + margin de 0px */
+    /* put a flex-basis of 100% on the h2 title to push the filters to the line + margin of 0px */
     .search-filters-list-items h2 {
         flex-basis: 100%;
         margin: 0px;
@@ -547,49 +556,38 @@ footer {
     }
 
     /* SECTION ACCOMODATIONS */
+
+    /* switch to column block contain popular and city */
     .accomodations-list {
         flex-direction: column;
-        flex-basis: 100%;
     }
     
     .accomodations-list .city {
-        /* passage du background de la section Hébergements en transparent */
+        /* change the background of the Accommodation section to transparent */
         background-color: transparent;
-         /* on remet un padding de 25px sur la partie hébergements */
+         /* we put a padding of 25px on the accommodation part */
         padding:25px;
     }
 
-    /* mettre les cartes en 100% de largeur */
+    /* set city cards to 100% width */
     .city-accomodation-card {
         width: 100%;
     }
 
-    /* mettre la partie populaire en 1er */
+    /* put the popular part first */
     .popular {
         order: -1;
     }
 
-    .accomodations-list .popular-items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
     .accomodations-list .popular {
-        /* on remet un padding de 25px sur la partie hébergements et on a un fond gris qui prend la largeur du parent */
+        /* we put a padding of 25px on the accommodation part and we have a gray background that takes the width of the parent */
         padding:25px;
-        /* on retire les coins arrondis */
+        /* remove the rounded corners */
         border-radius: 0px;
     }
-     /* les ancres des cartes populaires prennent toute la largeur des conteneurs pour être cliquable sur l'ensemble */
-     .popular-card a {
-        flex-basis: 100%;
-
-    }
-
-
-    /* activités à Marseille */
-    /* on remet un padding de 25px sur la partie activités */
+   
+    /* activities */
+    /* we put a padding of 25px on the activities part */
     #page-activities {
        padding:25px;  
     }
@@ -598,18 +596,18 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        /* mettre un gap de 30 px entre chaque élements du conteneur */
+        /* put a gap of 30 px between each element of the container */
     }
 
     .card_one,
     .card_group {
         width: 100%;
-        /* chaque contenant prend 100% de la taille du parent */
+        /* each container takes 100% of the width of the parent's size */
     }
 
     .card_group {
         gap: 30px;
-        /* mettre un gap de 30px entre chaque élément de chaque groupe */
+        /* put a 30px gap between each element of each group */
     }
 
     .card_one img,
@@ -618,19 +616,22 @@ footer {
     .card_group_3 img, 
     .card_group_4 img{
         height: 150px;
-        /* chaque image a 150px de hauteur */
+        /* each image is 150px height */
     }
 
     /* FOOTER */
 
+    /* we put a padding of 25px on the footer */
     footer {
-        /* on remet un padding de 25px sur le footer */
         padding: 25px;
     }
+
+    /* switch to column mode */
     .sections-footer {
         flex-direction: column;
     }
 
+    /* each sub-section takes 100% width */
     .sub-section-footer {
         width: 100%;
     }
@@ -639,61 +640,52 @@ footer {
 /* TABLETTE */
 @media screen and (max-width: 992px) and (min-width: 769px) {
     
-    /*  fond rouge pour phase de test */
+    /*  red background for test phase */
     body {
         background-color:red;
     }
 
     /* nav */
 
-    /* déplacement du menu qui prend toute la largeur  + padding en dessous du menu */
+    /* displacement of the menu which takes all the width + padding below the menu */
     .nav-menu {
         flex-basis: 100%;
         padding-bottom: 20px;
         padding-right: 0px;
     }
-    /* chaque lien du menu fait 50% de largeur et le texte est centré */
+
+    /* each menu link is 50% wide and the text is centered */
     .nav-menu a {
         flex-basis: 50%;
         text-align: center;
         border-bottom: 3px solid var(--grey-light);
     }
 
+    /* animations links on hover */
     .nav-menu a:hover {
         border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
-    /* mettre le logo au centre */
+
+    /* put the logo in the center */
     #nav-logo {
         margin: auto;
     }
 
     /* ACCOMODATIONS & POPULAR */
+    /* column mode switch */
     .accomodations-list {
         flex-direction: column;
     }
 
-    /* la section "les plus populaires passe devant Hébergements */
+    /* the "most popular" section passes in front of Accommodations*/
     .popular {
         order: -1;
     }
  
-    /*  les deux parties "hébergements" et "les plus populaires" prennent 100% de la largeur */
-    .accomodations-list .city {
-        flex-basis: 100%;
-    }
-
+    /*  the two parts "accommodations" and "most popular" take 100% of the width */
+    .accomodations-list .city,
     .accomodations-list .popular {
         flex-basis: 100%;
-    }
-
-    /* chaque carte populaire prend 100% de la largeur */
-    .popular-card {
-        flex-basis: 100%;
-    }
-    /* les ancres des cartes populaires prennent toute la largeur des conteneurs pour être cliquable sur l'ensemble */
-    .popular-card a {
-        flex-basis: 100%;
-
     }
 }
