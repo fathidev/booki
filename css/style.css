@@ -1,52 +1,63 @@
-/* importation de la police de caractère Raleway depuis Google Font */
+/* import Raleway font from Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Codes couleurs du projet */
+/* project color codes */
 :root {
     --blue: #0065FC;
     --blue-light: #DEEBFF;
     --grey-light: #F2F2F2;
 }
 
-/* Sélecteur universel */
+/* universal selector */
 * {
-    /* application de box-sing sur tous les éléments */
+    /* box-sizing application on all boxes */
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
     /* affectation de la police Raleway, avec une de secours universelle */
 }
 
-/* suppression des marges internes et externes sur tout le Body */
+/* removal of internal and external margins on the entire Body */
 body {
     padding: 0px;
     margin: 0px;
 }
 
-/*  ajout d'un padding sur les parties search + main + sections-footer */
+/* added padding on search + main + sections-footer */
 .wrapper {
     padding: 25px
 }
-
+/* color by inheritance and no underline */
 a {
     color: inherit;
     text-decoration: none;
 }
 
-/* toutes les images sont en fit-cover */
+/* all images of the projet are in object-fit:cover */
 img {
     object-fit: cover;
 }
 
+/* size of all section headings */
 .title-section {
     margin-top: 0px;
     font-size: 20px;
 }
 
+/*  colors for the stars  */
+.star-blue {
+    color: var(--blue);
+}
+
+.star-blue-light {
+    color: var(--blue-light);
+}
+
+
 /* HEADER */
 
 /* NAV */
 
-/* mettre le menu tout à droite */
+/* move the menu to the right */
 nav {
     display: flex;
     align-items: center;
@@ -55,7 +66,7 @@ nav {
     margin-bottom: -27px;
 }
 
-/* mettre le logo à gauche et fixer sa taille */
+/* put the logo on the left and fix its size */
 #nav-logo {
     margin-right: auto;
     padding: 18px;
@@ -83,24 +94,24 @@ nav {
 
 /* SECTION SEARCH */
 
-/* Trouvez votre hébergement pour des vacances de rêve */
+/* title */
 #search-intro-title {
     margin-bottom: -7px;
     font-size: 20px;
 }
 
-/* En plein centre ville ou en pleine nature */
+/* sub-title */
 #search-intro-sub-title {
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-/* SECTION SEARCH FORM */
+/* form */
 .search-form {
     display: flex;
     margin-bottom: 29px;
 }
-
+/* icon localisation */
 #icon-geoloc {
     padding: 16px 16px;
     background-color: var(--grey-light);
@@ -116,7 +127,7 @@ nav {
 .search-form input::placeholder {
     font-size: 14px;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .search-form button {
@@ -135,6 +146,7 @@ nav {
     transform: scale(1.02)
 }
 
+/* icon search not display in desktop mode */
 #icon-search {
     display: none;
 }
@@ -164,14 +176,14 @@ nav {
     border-radius: 32px;
     transition: 180ms all ease;
 }
-
+/* animations on filters */
 .search-filter-item:hover {
     background-color: var(--blue);
     color: white;
     cursor: pointer;
     transform: scale(1.02);
 }
-
+/* icons of filters */
 .search-filters .fas {
     color: var(--blue);
     background-color: var(--blue-light);
@@ -183,18 +195,18 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+/* font-weight labels all filters */
 .filter-label {
     font-weight: bold;
     padding: 14px;
 }
 
-/* SEARCH INFO RESULTS */
+/* infos results of search */
 .search-info-result {
     display: flex;
     align-items: center;
 }
-
+/* icon informations */
 .search-info-result .fas {
     color: var(--blue);
     width: 22px;
@@ -208,17 +220,20 @@ nav {
     align-items: center;
 }
 
+/* text info margin */
 .search-info-result p {
-    margin-left: 15px;
+    margin: 15px;
 }
 
 /* SECTION ACCOMODATIONS LIST*/
 
+/* container of accommodations and popular */
 .accomodations-list {
     display: flex;
     gap: 25px;
 }
 
+/* design of city and popular blocks */
 .accomodations-list .city,
 .accomodations-list .popular {
     background-color: var(--grey-light);
@@ -226,7 +241,7 @@ nav {
     border-radius: 16px;
 }
 
-/* Fixer la largeur des 2 sections : city & popular*/
+/* set the size of the city and populars parts */
 .accomodations-list .city {
     flex-basis: 66%;
 }
@@ -235,17 +250,19 @@ nav {
     flex-basis: 33%;
 }
 
-
 /* CITY */
 
+/* font-weight of text display more */
 .city-display-more {
     font-weight: bold;
 }
 
+/* change color of text on hover */
 .city-display-more:hover {
     color: var(--blue);
 }
 
+/* container of city */
 .city-accomodations-list {
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +271,7 @@ nav {
     margin-bottom: 16px;
 }
 
-/* CITY CARD */
+/* city cards */
 .city-accomodation-card {
     background-color: white;
     border-radius: 16px;
@@ -265,33 +282,28 @@ nav {
     min-width: 150px;
 }
 
+/* margins on each element of the right part of the city cards */
 .city-accomodation-card h3,
 .city-accomodation-card p,
 .city-accomodation-card .stars {
     margin: 5px;
 }
 
+/* set the size of the h3 city cards */
 .city-accomodation-card h3 {
     font-size: 14px;
 }
 
+/* set the size of the p city cards */
 .city-accomodation-card p {
     font-size: 12px;
 }
 
+/* set the image in the city cards */
 .city-accomodation-card img {
     border-radius: 16px 16px 0 0;
     height: 128px;
     width: 100%;
-    object-fit: cover;
-}
-
-.star-blue {
-    color: var(--blue);
-}
-
-.star-blue-light {
-    color: var(--blue-light);
 }
 
 /* POPULAR */
@@ -314,7 +326,7 @@ nav {
     padding-bottom: 5px;
 }
 
-/* POPULAR CARD */
+/* POPULAR CARDS */
 .popular-card {
     display: flex;
     background-color: white;
@@ -329,7 +341,6 @@ nav {
 .popular-card img {
     height: 128px;
     width: 120px;
-    object-fit: cover;
     border-radius: 16px 0 0 16px;
 }
 
@@ -345,7 +356,7 @@ nav {
     margin: 5px;
 }
 
-/* pour mettre un écart identique entre le bloc text et les stars */
+/* to put an identical gap between the text block and the stars */
 .popular-details {
     display: flex;
     flex-direction: column;
@@ -377,7 +388,7 @@ nav {
     padding-left: 15px;
 }
 
-/* conteneur qui contient les différentes cartes */
+/* container that contains the different cards */
 .card_activities {
     display: flex;
     flex-wrap: wrap;
