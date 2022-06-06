@@ -10,7 +10,7 @@
     /* box-sizing application on all boxes */
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
-    /* affectation de la police Raleway, avec une de secours universelle */
+    /* apply raleway font & rescue font */
 }
 
 /* removal of internal and external margins on the entire Body */
