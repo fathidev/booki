@@ -327,6 +327,7 @@ nav {
 /* features popular cards */
 .popular-card {
     display: flex;
+    flex-basis: 100%;
     background-color: white;
     border-radius: 16px;
     padding: 4px;
