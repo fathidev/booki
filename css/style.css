@@ -19,10 +19,16 @@ body {
     margin: 0px;
 }
 
-/* added padding on search + main + sections-footer */
+/* added padding main + sections-footer */
 .wrapper {
     padding: 25px
 }
+
+/* added padding search */
+.wrapper-search {
+    padding: 25px 25px 0 25px;
+}
+
 /* color by inheritance and no underline */
 a {
     color: inherit;
@@ -265,19 +271,16 @@ nav {
 /* CITY */
 
 /* font-weight of text display more */
-#display-more {
+#btn-display-more {
     font-weight: bold;
     border: 0;
+    background-color: transparent;
 }
-#display-more:hover {
+#btn-display-more:hover {
     color:var(--blue);
     cursor: pointer;
 }
 
-/* change color of text on hover */
-.city-display-more:hover {
-    color: var(--blue);
-}
 
 /* container of city */
 .city-accomodations-list {
@@ -304,16 +307,6 @@ nav {
 .city-accomodation-card p,
 .city-accomodation-card .stars {
     margin: 5px;
-}
-
-/* set the size of the h3 city cards
-.city-accomodation-card h3 {
-    font-size: 14px;
-} */
-
-/* set the size of the p city cards */
-.city-accomodation-card p {
-    font-size: 12px;
 }
 
 /* set the image in the city cards */
@@ -383,10 +376,6 @@ nav {
 /* space the stars block from the bottom of the card */
 .popular-details .stars {
     padding-bottom: 5px;
-}
-/* size of p in details popular cards */
-.popular-details p {
-    font-size: 12px;
 }
 
 /* put flex on ancre of cards */
@@ -604,13 +593,8 @@ footer {
     /* activities */
     /* we put a padding of 25px on the activities part */
     #page-activities {
-       padding:25px;  
+       padding:0 25px 25px 25px;  
     }
-    
-     /* modification font size h3 */
-     /* #page-activities h3 {
-        font-size: 14px;
-    } */
    
     .card_activities {
         display: flex;
@@ -718,8 +702,4 @@ footer {
     .accomodations-list .popular {
         flex-basis: 100%;
     }
-    /* modification font size h3
-    #page-activities h3 {
-        font-size: 14px;
-    } */
 }
