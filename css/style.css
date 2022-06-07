@@ -249,6 +249,7 @@ nav {
 .accomodations-list {
     display: flex;
     gap: 25px;
+    margin-bottom: 50px;
 }
 
 /* design of city and popular blocks */
@@ -399,7 +400,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* all container images take 100% width of parent */
@@ -594,6 +595,9 @@ footer {
     /* we put a padding of 25px on the activities part */
     #page-activities {
        padding:0 25px 25px 25px;  
+    }
+    .page-activities-margin-title {
+        margin: 40px 0 0 0;
     }
    
     .card_activities {
