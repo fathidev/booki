@@ -40,6 +40,15 @@ img {
     font-size: 20px;
 }
 
+h3 {
+    font-size: 14px;
+}
+
+.popular-details p,
+.city-accomodation-card p {
+    font-size: 13px;
+}
+
 /*  colors for the stars  */
 .star-blue {
     color: var(--blue);
@@ -297,10 +306,10 @@ nav {
     margin: 5px;
 }
 
-/* set the size of the h3 city cards */
+/* set the size of the h3 city cards
 .city-accomodation-card h3 {
     font-size: 14px;
-}
+} */
 
 /* set the size of the p city cards */
 .city-accomodation-card p {
@@ -597,6 +606,11 @@ footer {
     #page-activities {
        padding:25px;  
     }
+    
+     /* modification font size h3 */
+     /* #page-activities h3 {
+        font-size: 14px;
+    } */
    
     .card_activities {
         display: flex;
@@ -625,6 +639,7 @@ footer {
         /* each image is 150px height */
     }
 
+
     /* FOOTER */
 
     /* we put a padding of 25px on the footer */
@@ -641,6 +656,7 @@ footer {
     .sub-section-footer {
         width: 100%;
     }
+
 }
 
 /* TABLETTE */
@@ -702,4 +718,8 @@ footer {
     .accomodations-list .popular {
         flex-basis: 100%;
     }
+    /* modification font size h3
+    #page-activities h3 {
+        font-size: 14px;
+    } */
 }
