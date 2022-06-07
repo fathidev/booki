@@ -46,7 +46,10 @@ img {
     font-size: 20px;
 }
 
-h3 {
+
+.city-accomodation-card h3, 
+.popular-details h3,
+#page-activities h3 {
     font-size: 14px;
 }
 
@@ -476,8 +479,11 @@ footer {
 .sections-footer {
     display: flex;
     justify-content: space-evenly;
-
 }
+footer h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
 /* each subsection is in column mode and is 30% wide */
 .sub-section-footer {
     display: flex;
@@ -485,9 +491,10 @@ footer {
     width: 30%;
 }
 
-/*  the "ancre" links each have a padding at the bottom of 10px*/
+/*  the "ancre" links each have a padding at the bottom of 10px and size 14px*/
 .sub-section-footer a {
     padding-bottom: 10px;
+    font-size: 14px;
 }
 
 /* change color of links on hover */
@@ -634,6 +641,8 @@ footer {
     footer {
         padding: 25px;
     }
+
+    
 
     /* switch to column mode */
     .sections-footer {
