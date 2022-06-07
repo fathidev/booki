@@ -60,13 +60,13 @@ nav {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin-bottom: -27px;
+    margin: 0;
 }
 
 /* put the logo on the left and fix its size */
 #nav-logo {
+    position: absolute;
     margin-right: auto;
-    padding: 18px;
     width: 130px
 }
 
@@ -256,8 +256,13 @@ nav {
 /* CITY */
 
 /* font-weight of text display more */
-.city-display-more {
+#display-more {
     font-weight: bold;
+    border: 0;
+}
+#display-more:hover {
+    color:var(--blue);
+    cursor: pointer;
 }
 
 /* change color of text on hover */
@@ -527,7 +532,10 @@ footer {
 
     /* put the logo in the center */
     #nav-logo {
+        position: relative;
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     /* SEARCH */
@@ -650,6 +658,14 @@ footer {
         flex-basis: 100%;
         padding-bottom: 20px;
         padding-right: 0px;
+    }
+
+    /* put the logo in the center */
+    #nav-logo {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     /* each menu link is 50% wide and the text is centered */
