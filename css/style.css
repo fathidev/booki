@@ -503,10 +503,9 @@ footer {
         padding: 0px;
     }
 
-    /* background color for test phase */
-    body {
+    /* background color for test phase body {
         background-color:green;
-    }
+    } */
 
     /* NAV */
     /* the navigation menu takes the full width */
@@ -650,10 +649,10 @@ footer {
 /* TABLETTE */
 @media screen and (max-width: 992px) and (min-width: 769px) {
     
-    /*  red background for test phase */
+     /* red background for test phase
     body {
         background-color:red;
-    }
+    } */
 
     /* nav */
 
